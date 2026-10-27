@@ -4,14 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Book Your Dream Vacation</title>
-        <link rel="icon" href="images/icon.png">         <!--Favicon-->
+        <link rel="icon" href="images/icon.png">        <!--Favicon-->
         <link rel="Stylesheet" href="styles/home.css">  <!--CSS-->
         <script src="scripts/home.js" defer></script>   <!--Javascript-->
     </head>
     <body>
-        <header>
-            <img src="images/banner.jpg" alt="Image of a tropical beach">
-            <h1>Book Your Dream Vacation</h1>
-        </header>
+        <div id="content">
+            <header>
+                <img id="banner" src="images/banner.jpg" alt="Image of a tropical beach">
+                <h1>Book Your Dream Vacation</h1>
+            </header>
+            <form id="form" action="/submit" method="post">
+                <div id="dest">
+                    <label for="destination">Destination</label>
+                    <br>
+                    <select id="destination" name="destination">
+                        <option value="none">Choose a destination...</option>
+                        <option value="bali">Bali, Indonesia</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="tokyo">Tokyo, Japan</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="nyc">New York City, USA</option>
+                    </select>
+                </div>
+                <div id="dep">
+                    <label for="departure">Departure Date</label>
+                    <br>
+                    <input type="date" id="departure" name="departure">
+                </div>
+                <div id="count">
+                    <label for="travelers">Number of Travelers</label>
+                    <br>
+                    <input type="number" id="travelers" name="travelers">
+                </div>
+                <button type="submit" id="submit-button">Find My Vacation</button>
+            </form>
+        </div>
+        <footer>
+            <p>
+                GitHub Repository: <a href="https://github.com/marenner/vacation">https://github.com/marenner/vacation</a>
+            </p>
+        </footer>
     </body>
 </html>
