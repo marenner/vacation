@@ -28,13 +28,12 @@ app.get('/confirm', (req, res) => {
 app.post('/submit', (req, res) => {
 
     // Create a JSON object to store order data
-    const order = req.body;
-    order['timestamp'] = new Date();
+    const post = req.body;
+    post['timestamp'] = new Date();
 
-    // Add order object to orders array
-    orders.push(order);
+    posts.push(post);
 
-    console.log(orders);
+    console.log(posts);
 
     // Display confirmation page
     res.sendFile(`${import.meta.dirname}/views/confirm.html`);

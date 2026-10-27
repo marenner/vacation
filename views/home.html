@@ -26,6 +26,7 @@
                         <option value="maldives">Maldives</option>
                         <option value="nyc">New York City, USA</option>
                     </select>
+                    <span class="err" id="err-dest">Please select a destination.</span>
                 </div>
                 <div id="dep">
                     <label for="departure">Departure Date</label>
@@ -36,6 +37,7 @@
                     <label for="travelers">Number of Travelers</label>
                     <br>
                     <input type="number" id="travelers" name="travelers">
+                    <span class="err" id="err-count">Number of travelers cannot be less than 1.</span>
                 </div>
                 <button type="submit" id="submit-button">Find My Vacation</button>
             </form>

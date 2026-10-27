@@ -96,3 +96,11 @@ footer {
     grid-area: footer;
     padding: 1rem;
 }
+
+.err {
+    color: red;
+    font-size: 10pt;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    display: none;
+}
